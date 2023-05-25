@@ -25,7 +25,7 @@ function rev(str){
 			i++;
 			}
 	for(let j=i-1;j>=0;j--)
-		document.write(bnum[j]);
+		return bnum[j];
 }
 
 module.exports = threeSum;
