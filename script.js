@@ -1,18 +1,17 @@
 function threeSum(num) {
-	  // Check if the input is a non-negative integer
-  if (Number.isInteger(num) && num >= 0) {
-    // Special case for 0
-    if (num === 0) {
-      return '0';
+	  let binaryNum = new Array(32);
+ 
+    // counter for binary array
+    let i = 0;
+    while (n > 0) {
+ 
+        // storing remainder in binary array
+        binaryNum[i] = n % 2;
+        n = Math.floor(n / 2);
+        i++;
     }
-
-    // Perform the conversion
-    let binary = '';
-    while (num > 0) {
-      binary = (num % 2) + binary;
-      num = Math.floor(num / 2);
-    }
-
-    return binary;
-  } 
+ 
+    // printing binary array in reverse order
+    for (let j = i - 1; j >= 0; j--)
+        document.write(binaryNum[j]);
 }
